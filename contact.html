@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+<head>
+	<meta charset="utf-8">
+	<title>MyDay/contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Sansita&amp;subset=latin-ext" rel="stylesheet">
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="contact">
+		<nav class="">
+			<ul class="nav nav-tabs nav-justified">
+				<li role="presentation"><a href="index.html">Home</a></li>
+				<li role="presentation"><a href="todo.html">To Do List</a></li>
+				<li role="presentation"><a href="links.html">Links</a></li>
+				<li role="presentation"><a href="about.html">About</a></li>
+				<li role="presentation"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<form action="http://api.coderslab.pl/showpost.php" method="post" class="form">
+			<div class="heading"><h3 class="heading">Hi! Send me a message!</h3></div>
+			<div class='form-group'>
+				<label>email:</label>
+				<input type="text" class='form-control' id='email' name="email">
+				<label>name:</label>
+				<input type="text" class='form-control' id='name' name="name">
+				<label>surname:</label>
+				<input type="text" class='form-control'  id='surname' name="surname">
+				<label>message</label>
+				<input type="text" class='form-control'  id='message' name="message">
+			</div>
+			<span>
+				<button type="button" class="btn btn-primary btn-lg btn-block">send >> </button>
+			</span>
+		</form>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase-database.js"></script>
+	      <script src="js/form.js"></script>	
+</body>
+</html>
